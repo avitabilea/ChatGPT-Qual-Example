@@ -134,7 +134,7 @@ Rules:
             return "none"
 
 # Now we setup another function that will import our data from Excel and read our .env file
-def process_excel_file(input_file, env_path):
+def process_excel_file(input_file, output_file, env_path):
     """
     Main function that:
     1. Reads the Excel file
@@ -173,7 +173,6 @@ def process_excel_file(input_file, env_path):
                 print(f"Processed {index + 1} of {len(df)} rows")
         
         # Save the results to a new Excel file
-        output_file = input_file.replace('.xlsx', '_analyzed.xlsx')
         df.to_excel(output_file, index=False)
         print(f"\nAnalysis complete! Results saved to: {output_file}")
         
@@ -188,9 +187,10 @@ def main():
     # IMPORTANT: Update these paths to match your computer!
     env_path = r"C:\Users\Andre\Dropbox\ChatGPT Qual Example\scripts\.env"
     input_file = r"C:\Users\Andre\Dropbox\ChatGPT Qual Example\data\Example Data.xlsx"
+    output_file = r"C:\Users\Andre\Dropbox\ChatGPT Qual Example\output\Example Data - Coded.xlsx"
     
     # Start processing the Excel file
-    process_excel_file(input_file, env_path)
+    process_excel_file(input_file, output_file, env_path)
 
 # This is the standard way to run a Python script
 if __name__ == "__main__":
