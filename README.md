@@ -2,6 +2,8 @@
 
 This folder contains an example Python script analyzes written feedback provided to pre-service teachers (PSTs) using ChatGPT (GPT-4o-mini) to identify areas for improvement in teaching practices. It processes feedback stored in an Excel file and saves the results, identifying areas for improvement like classroom management, lesson planning, and more.
 
+The folder also contains a document called slides.pdf which walk you through how to setup Python, Positron (for running Python code), getting an OpenAI API key, and .env files.
+
 ## Features
 - Analyze feedback using GPT-4o-mini.
 - Identify key areas for improvement (e.g., Classroom Management, Lesson Planning, Student Engagement).
