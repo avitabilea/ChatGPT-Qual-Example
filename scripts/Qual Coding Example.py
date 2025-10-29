@@ -116,7 +116,7 @@ Rules:
                         "content": self.create_prompt(feedback_text)
                     }
                 ],
-                temperature=0.2  # Lower temperature means more consistent responses. If temperature is 0 you should get the same responses every time, but ChatGPT may be more risk-averse.
+                temperature=1  # Lower temperature means more consistent responses. If temperature is 0 you should get the same responses every time, but ChatGPT may be more risk-averse.
             )
 
             # Extract the response text from ChatGPT
